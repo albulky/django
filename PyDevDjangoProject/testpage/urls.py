@@ -15,10 +15,13 @@ Including another URLconf
 """
 #from django.contrib import admin
 from django.urls import path
-from . import views
+from . import views, contactform
 
 urlpatterns = [
     path('', views.index, name='index'),
     path('<int:n>/<str:s>/', views.index, name='index_with_params'),
+    path('html/', views.show_html, name='html_page'),
+    path('html/<str:title>/<str:msg>/', views.show_html, name='html_page'),
+    path('contact/', contactform.contact, name='contact'),
     path('<path:p>/', views.index, name='index_with_path'),
 ]

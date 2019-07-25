@@ -19,6 +19,6 @@ from django.views import debug
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('testpage/', include('testpage.urls')),
-    path('', debug.default_urlconf),
+    path('debug/', debug.default_urlconf),
+    path('', include('testpage.urls')),    
 ]
