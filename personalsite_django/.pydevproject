@@ -4,7 +4,7 @@
 <key>DJANGO_MANAGE_LOCATION</key>
 <value>manage.py</value>
 <key>DJANGO_SETTINGS_MODULE</key>
-<value>PyDevDjangoProject.settings</value>
+<value>personalsite_django.settings</value>
 <key>PY</key>
 <value>34</value>
 </pydev_variables_property>
